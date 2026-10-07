@@ -57,4 +57,23 @@ class PublicPagesTest extends TestCase
             ->assertSee('images/home/nigerian-crayfish-stew.webp')
             ->assertSee('images/home/sustainable-river.webp');
     }
+
+    public function test_our_story_page_renders_the_complete_brand_story(): void
+    {
+        $response = $this->get('/our-story');
+
+        $response
+            ->assertSeeTextInOrder([
+                'A Rich Tradition',
+                'More Than a Product,',
+                'Authentic Origin',
+                'Quality You Can Trust',
+                'Good Food Brings People Together',
+            ])
+            ->assertSee('images/story/hero-river.webp')
+            ->assertSee('images/home/krill-harvest-pouch.webp')
+            ->assertSee('images/story/heritage-fisherman.webp')
+            ->assertSee('images/story/quality-ground-crayfish.webp')
+            ->assertSee('images/story/mangrove-cta.webp');
+    }
 }
