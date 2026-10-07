@@ -75,14 +75,6 @@
                     class="relative z-10 h-auto max-h-[500px] w-auto max-w-full drop-shadow-[0_20px_26px_rgba(0,0,0,0.35)] sm:max-h-[580px] lg:max-h-[clamp(32rem,38vw,40rem)]"
                 >
 
-                <div class="absolute right-[1%] top-[18%] hidden rotate-[-7deg] text-left font-script leading-[0.84] font-semibold drop-shadow-md lg:block lg:text-[1.6rem] xl:text-[clamp(1.8rem,2.5vw,2.9rem)]" aria-hidden="true">
-                    Same great<br>
-                    <span class="ml-3">taste. More</span><br>
-                    <span class="ml-5">great meals.</span>
-                    <svg class="mt-2 ml-10 h-5 w-28 text-accent" viewBox="0 0 112 20" fill="none">
-                        <path d="M3 15C35 5 73 7 109 2" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-                    </svg>
-                </div>
             </div>
         </div>
     </section>
@@ -92,7 +84,6 @@
             <div class="grid gap-9 lg:grid-cols-[35%_65%] lg:items-center lg:gap-10">
                 <div>
                     <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.28em] text-accent uppercase">
-                        <span class="h-0.5 w-9 bg-accent"></span>
                         Browse Recipes
                     </p>
                     <h2 class="mt-3 font-display text-[clamp(3rem,7vw,4rem)] leading-[0.86] font-semibold tracking-[-0.04em] text-black lg:text-[2.6rem] xl:text-[clamp(3.1rem,3.8vw,4.5rem)]">
@@ -171,7 +162,6 @@
 
             <div id="featured-recipes" class="mt-12 scroll-mt-8 lg:mt-7 xl:mt-14">
                 <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.28em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     Featured Recipes
                 </p>
 
@@ -259,18 +249,10 @@
                     loading="lazy"
                     class="absolute inset-0 size-full object-contain object-left-bottom lg:scale-110"
                 >
-                <figcaption class="absolute top-[18%] left-[58%] rotate-[-7deg] font-script text-[clamp(1.45rem,2vw,2.1rem)] leading-[0.82] font-semibold text-forest">
-                    Good<br>
-                    Food<br>
-                    Brings<br>
-                    People<br>
-                    Together.
-                </figcaption>
             </figure>
 
             <div class="px-6 py-10 sm:px-10 lg:px-6 lg:py-3 xl:px-10 xl:py-7">
                 <p class="flex items-center gap-4 text-[clamp(0.7rem,0.75vw,0.9rem)] font-semibold tracking-[0.24em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     Cook. Share. Inspire.
                 </p>
                 <h2 class="mt-3 font-display text-[clamp(2.8rem,6vw,3.8rem)] leading-[0.9] font-semibold tracking-[-0.035em] lg:mt-2 lg:text-[2rem] xl:mt-3 xl:text-[clamp(2.7rem,3.3vw,4rem)]">
@@ -299,22 +281,12 @@
                 loading="lazy"
                 class="absolute inset-0 size-full object-cover object-center"
             >
-            <div class="absolute inset-y-0 left-0 w-1/2 bg-linear-to-r from-black/62 to-transparent" aria-hidden="true"></div>
-            <blockquote class="absolute top-[10%] left-[7%] rotate-[-6deg] font-script text-[clamp(1.9rem,3vw,3.1rem)] leading-[0.82] font-semibold drop-shadow-md">
-                The secret<br>
-                <span class="ml-4">ingredient to</span><br>
-                <span class="ml-8">great meals.</span>
-            </blockquote>
-            <svg class="absolute top-[42%] left-[15%] h-5 w-24 -rotate-12 text-accent" viewBox="0 0 96 20" fill="none" aria-hidden="true">
-                <path d="M3 15C31 6 61 6 93 2" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-            </svg>
         </figure>
 
         <div class="relative isolate flex items-center overflow-hidden px-6 py-14 sm:px-12 lg:px-[clamp(2.5rem,4vw,5rem)] lg:py-5 xl:py-12">
             <img src="{{ asset('images/home/crayfish-line-art.svg') }}" alt="" class="absolute -right-14 top-8 -z-10 h-[clamp(15rem,23vw,24rem)] w-auto opacity-[0.09]" aria-hidden="true">
             <div class="max-w-[39rem]">
                 <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.27em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     A Taste of Nigeria
                 </p>
                 <h2 class="mt-4 font-display text-[clamp(3rem,7vw,4.2rem)] leading-[0.87] font-semibold tracking-[-0.04em] text-black lg:text-[2.7rem] xl:text-[clamp(3rem,4vw,4.7rem)]">

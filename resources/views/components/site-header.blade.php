@@ -10,7 +10,7 @@
     ];
 @endphp
 
-<header {{ $attributes->merge(['class' => 'relative z-40 border-b border-line/70 bg-surface']) }}>
+<header {{ $attributes->merge(['class' => 'sticky top-0 z-40 border-b border-line/70 bg-surface']) }}>
     <div class="mx-auto w-full max-w-[100rem] px-5 sm:px-8 lg:px-8 xl:px-20">
         <div class="flex h-20 items-center justify-between lg:hidden">
             <x-site-logo />

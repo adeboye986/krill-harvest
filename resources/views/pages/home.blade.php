@@ -24,7 +24,6 @@
                 </h1>
 
                 <div class="mt-8 flex items-center gap-5 text-[clamp(1rem,1vw,1.25rem)] font-semibold tracking-[0.34em] uppercase">
-                    <span class="h-0.5 w-12 bg-accent"></span>
                     <span>Ground Fresh</span>
                 </div>
 
@@ -154,7 +153,6 @@
             <img src="{{ asset('images/home/crayfish-line-art.svg') }}" alt="" class="absolute -right-10 top-6 -z-10 h-[250px] w-auto opacity-[0.1]" aria-hidden="true">
             <div class="max-w-[40rem]">
                 <p class="flex items-center gap-4 text-[clamp(0.75rem,0.8vw,0.95rem)] font-semibold tracking-[0.3em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     A Taste of Home
                 </p>
                 <h2 class="mt-6 font-display text-[clamp(2.9rem,5vw,3.5rem)] leading-[0.88] font-semibold tracking-[-0.035em] text-black lg:text-[clamp(2.6rem,4vw,3.25rem)] xl:text-[clamp(3.25rem,4.4vw,4.5rem)]">
@@ -174,7 +172,6 @@
         <div class="mx-auto grid w-full max-w-[100rem] gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[37%_63%] lg:items-center lg:gap-10 lg:px-12 lg:py-16 xl:gap-12 xl:px-16 xl:py-20">
             <div class="lg:pr-5">
                 <p class="flex items-center gap-4 text-[clamp(0.75rem,0.8vw,0.95rem)] font-semibold tracking-[0.3em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     Tradition Meets Quality
                 </p>
                 <h2 class="mt-5 font-display text-[clamp(2.9rem,6vw,3.65rem)] leading-[0.88] font-semibold tracking-[-0.035em] text-black lg:text-[clamp(2.75rem,3.3vw,3.5rem)] xl:text-[clamp(3.25rem,4vw,4.75rem)]">
@@ -218,7 +215,6 @@
 
         <div class="max-w-4xl text-black">
             <p class="flex items-center justify-center gap-4 text-[clamp(0.75rem,0.8vw,0.95rem)] font-medium tracking-[0.18em] uppercase">
-                <span class="h-0.5 w-8 bg-accent"></span>
                 <span>Good Food. <strong class="font-semibold text-accent">Brighter Tomorrows.</strong></span>
             </p>
             <h2 class="mt-5 font-display text-[clamp(3rem,5vw,4rem)] leading-[0.95] font-semibold tracking-[-0.035em] lg:text-[clamp(4rem,4.5vw,5.5rem)]">

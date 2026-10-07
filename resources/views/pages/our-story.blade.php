@@ -53,7 +53,6 @@
         <div class="mx-auto grid w-full max-w-[100rem] gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[minmax(0,47fr)_minmax(0,53fr)] lg:items-center lg:gap-14 lg:px-12 lg:py-10 xl:gap-20 xl:px-20 xl:py-14">
             <div>
                 <p class="flex items-center gap-4 text-[clamp(0.75rem,0.8vw,0.95rem)] font-semibold tracking-[0.3em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     Rooted in Oron
                 </p>
                 <h2 class="mt-4 font-display text-[clamp(3.1rem,6.6vw,4.3rem)] leading-[0.88] font-semibold tracking-[-0.04em] text-black lg:text-[clamp(3.2rem,4.3vw,5rem)]">
@@ -79,11 +78,6 @@
                     loading="lazy"
                     class="aspect-[1.62] w-full object-cover object-center"
                 >
-                <div class="absolute inset-x-0 top-0 h-2/5 bg-linear-to-b from-black/20 to-transparent" aria-hidden="true"></div>
-                <blockquote class="absolute top-[6%] right-[6%] rotate-[-4deg] font-script text-[clamp(1.45rem,2.2vw,2.3rem)] leading-[0.9] font-semibold text-white drop-shadow-md">
-                    “From our waters,<br>
-                    <span class="ml-5">to your table.”</span>
-                </blockquote>
                 <figcaption class="absolute right-[4%] bottom-[4%] flex items-center gap-3 rounded-md bg-black/20 px-3 py-2 text-[clamp(0.68rem,0.8vw,0.9rem)] leading-[1.15] font-semibold backdrop-blur-[2px]">
                     <svg class="size-6 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M12 21s7-6.15 7-12A7 7 0 1 0 5 9c0 5.85 7 12 7 12Z" fill="currentColor" />
@@ -158,20 +152,10 @@
                     loading="lazy"
                     class="aspect-[1.72] w-full object-cover object-center"
                 >
-                <div class="absolute inset-y-0 left-0 w-[58%] bg-linear-to-r from-black/66 to-transparent" aria-hidden="true"></div>
-                <blockquote class="absolute top-[10%] left-[7%] rotate-[-5deg] font-script text-[clamp(1.65rem,2.3vw,2.6rem)] leading-[0.85] font-semibold drop-shadow-md">
-                    “The same great taste<br>
-                    <span class="ml-4">Nigerians love.</span><br>
-                    <span class="ml-8">Now closer to you.”</span>
-                </blockquote>
-                <svg class="absolute top-[47%] left-[14%] h-5 w-20 -rotate-12 text-accent" viewBox="0 0 80 20" fill="none" aria-hidden="true">
-                    <path d="M2 14C25 6 50 5 78 2" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-                </svg>
             </figure>
 
             <div class="max-w-[44rem]">
                 <p class="flex items-center gap-4 text-[clamp(0.75rem,0.8vw,0.95rem)] font-semibold tracking-[0.3em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     Our Commitment
                 </p>
                 <h2 class="mt-4 font-display text-[clamp(3.1rem,6.6vw,4.3rem)] leading-[0.88] font-semibold tracking-[-0.04em] text-black lg:text-[clamp(3.2rem,4.3vw,5rem)]">
@@ -201,7 +185,6 @@
 
         <div class="mx-auto max-w-5xl">
             <p class="flex items-center justify-center gap-4 text-[clamp(0.7rem,0.8vw,0.95rem)] font-semibold tracking-[0.16em] text-accent uppercase">
-                <span class="h-0.5 w-9 bg-accent"></span>
                 A Taste of Nigeria. A Brighter Tomorrow.
             </p>
             <h2 class="mt-5 font-display text-[clamp(3rem,7.2vw,4.5rem)] leading-[0.92] font-semibold tracking-[-0.035em] lg:text-[clamp(4rem,5vw,6rem)]">
@@ -216,13 +199,5 @@
             </x-button-link>
         </div>
 
-        <div class="absolute right-[4%] bottom-[8%] hidden rotate-[-7deg] text-left font-script text-[clamp(1.65rem,2.2vw,2.5rem)] leading-[0.83] font-semibold drop-shadow-md xl:block" aria-hidden="true">
-            Nigerian<br>
-            <span class="ml-5">by Nature.</span><br>
-            <span class="ml-2">Loved Everywhere.</span>
-            <svg class="mt-1 ml-10 h-5 w-28 text-accent" viewBox="0 0 112 20" fill="none">
-                <path d="M3 15C35 5 73 7 109 2" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-            </svg>
-        </div>
     </section>
 @endsection

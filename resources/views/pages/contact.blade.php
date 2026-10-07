@@ -20,15 +20,6 @@
                         We’d love to hear from you.
                     </p>
 
-                    <div class="mt-8 ml-8 w-fit rotate-[-6deg] sm:ml-14 lg:mt-9 lg:ml-8 xl:mt-12 xl:ml-14" aria-hidden="true">
-                        <p class="font-script text-[clamp(2.25rem,3vw,3.25rem)] leading-[0.82] font-semibold text-[#071d17]">
-                            Good Food<br>
-                            <span class="ml-3">Brings People Together.</span>
-                        </p>
-                        <svg class="mt-1 ml-20 h-8 w-32 text-accent" viewBox="0 0 128 32" fill="none">
-                            <path d="M4 27C38 13 76 7 124 4" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
-                        </svg>
-                    </div>
                 </div>
 
                 <img

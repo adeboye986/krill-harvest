@@ -156,21 +156,11 @@
                 loading="lazy"
                 class="absolute inset-0 size-full object-cover object-center"
             >
-            <div class="absolute inset-y-0 left-0 w-1/2 bg-linear-to-r from-black/62 to-transparent" aria-hidden="true"></div>
-            <blockquote class="absolute top-[10%] left-[7%] rotate-[-6deg] font-script text-[clamp(1.9rem,3vw,3.1rem)] leading-[0.82] font-semibold drop-shadow-md">
-                The secret<br>
-                <span class="ml-4">ingredient to</span><br>
-                <span class="ml-8">great meals.</span>
-            </blockquote>
-            <svg class="absolute top-[40%] left-[14%] h-5 w-24 -rotate-12 text-accent" viewBox="0 0 96 20" fill="none" aria-hidden="true">
-                <path d="M3 15C31 6 61 6 93 2" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-            </svg>
         </figure>
 
         <div class="flex items-center px-6 py-14 sm:px-12 lg:px-[clamp(2.5rem,4vw,5rem)] lg:py-3 xl:py-12">
             <div class="w-full max-w-[43rem]">
                 <p class="flex items-center gap-4 text-[clamp(0.7rem,0.8vw,0.95rem)] font-semibold tracking-[0.25em] text-accent uppercase">
-                    <span class="h-0.5 w-9 bg-accent"></span>
                     Perfect for Your Favorite Dishes
                 </p>
                 <h2 class="mt-4 font-display text-[clamp(3rem,7vw,4.2rem)] leading-[0.87] font-semibold tracking-[-0.04em] text-black lg:text-[2.8rem] xl:text-[clamp(3.2rem,4vw,4.7rem)]">
@@ -256,13 +246,6 @@
             </div>
         </div>
 
-        <div class="absolute right-[6%] bottom-[14%] hidden rotate-[-7deg] text-left font-script text-[clamp(1.8rem,2.5vw,2.8rem)] leading-[0.85] font-semibold drop-shadow-md xl:block" aria-hidden="true">
-            Local Waters.<br>
-            <span class="ml-4">Global Tables.</span>
-            <svg class="mt-2 ml-9 h-5 w-28 text-accent" viewBox="0 0 112 20" fill="none">
-                <path d="M3 15C35 5 73 7 109 2" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
-            </svg>
-        </div>
     </section>
 
     <section class="bg-[#fbf8f1]">
