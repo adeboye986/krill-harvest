@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 80" role="img" aria-labelledby="title">
+    <title id="title">Krill Harvest</title>
+    <g fill="none" stroke="#e86f2d" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M82 7c11 1 17 8 15 17-2 8-11 12-20 8-8-3-10-12-5-18 2-3 6-5 10-7Z" fill="#e86f2d" stroke="none"/>
+        <path d="M96 15c9-3 13-8 12-14 6 5 6 14-1 20-4 4-8 5-12 5" stroke-width="2.4"/>
+        <path d="M72 18c-9-1-15 2-18 8 4-2 8-2 12 1m8-13c-5-5-10-7-15-5 4 1 7 4 9 8" stroke-width="2"/>
+        <path d="M76 31c5 3 10 3 15 0m-17-4c6 3 13 3 19-1" stroke="#fff" stroke-width="1" opacity=".85"/>
+    </g>
+    <text x="76" y="55" text-anchor="middle" fill="#12372c" font-family="Georgia, serif" font-size="25" font-weight="700" letter-spacing="2">KRILL</text>
+    <path d="M23 61h24M105 61h24" stroke="#e86f2d" stroke-width="2"/>
+    <text x="76" y="67" text-anchor="middle" fill="#e86f2d" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2.6">HARVEST</text>
+</svg>
