@@ -58,23 +58,23 @@
                 <span class="mx-5 h-16 w-px shrink-0 bg-white/25 sm:mx-6" aria-hidden="true"></span>
 
                 <div class="min-w-0">
-                    <p class="text-[clamp(0.95rem,1.15vw,1.15rem)] leading-tight font-semibold">
+                    <p class="text-[clamp(1.08rem,1.25vw,1.3rem)] leading-tight font-semibold">
                         Good Food. Brighter Tomorrows.
                     </p>
-                    <p class="mt-3 max-w-[29rem] text-[0.72rem] leading-[1.45] text-[#bdc9c3] sm:text-[0.78rem]">
+                    <p class="mt-3 max-w-[29rem] text-[0.9rem] leading-[1.45] text-[#bdc9c3] sm:text-[0.95rem]">
                         Premium Oron crayfish from the heart of Nigeria to tables around the world.
                     </p>
                 </div>
             </div>
 
-            <p class="mt-6 text-[0.72rem] text-[#bdc9c3] sm:text-[0.78rem]">
+            <p class="mt-6 text-[0.9rem] text-[#bdc9c3] sm:text-[0.95rem]">
                 © {{ now()->year }} Krill Harvest LLC. All rights reserved.
             </p>
         </div>
 
         <div class="lg:pt-2">
             <nav aria-label="Footer navigation">
-                <ul class="flex flex-wrap items-center gap-x-3 gap-y-3 text-[0.78rem] font-medium sm:gap-x-4 sm:text-[0.84rem] lg:justify-end">
+                <ul class="flex flex-wrap items-center gap-x-3 gap-y-3 text-[0.95rem] font-medium sm:gap-x-4 xl:text-base lg:justify-end">
                     @foreach ($footerNavigation as $item)
                         <li class="flex items-center gap-3 sm:gap-4">
                             <a class="transition-colors hover:text-accent" href="{{ $item['href'] }}">
