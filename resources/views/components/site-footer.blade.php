@@ -31,7 +31,7 @@
         >
     </div>
 
-    <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-9 sm:px-10 lg:grid-cols-[48%_52%] lg:items-start lg:gap-10 lg:px-12 lg:py-8 xl:px-20">
+    <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-12 sm:px-10 sm:py-14 lg:grid-cols-[48%_52%] lg:items-start lg:gap-10 lg:px-12 lg:py-14 xl:px-20 xl:py-16">
         <div>
             <div class="flex items-center">
                 <div class="relative h-[4.7rem] w-[8.9rem] shrink-0 sm:h-20 sm:w-[9.5rem]" role="img" aria-label="Krill Harvest">
