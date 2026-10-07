@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="relative isolate overflow-hidden bg-[#17231a] text-white lg:h-[500px]">
+    <section class="relative isolate overflow-hidden bg-[#17231a] text-white">
         <img
             src="{{ asset('images/home/hero-kitchen.webp') }}"
             alt="Ground crayfish, tomatoes, and greens on a rustic kitchen table"
@@ -14,25 +14,25 @@
         >
         <div class="absolute inset-0 -z-10 bg-linear-to-r from-[#07110b]/95 via-[#07110b]/55 to-transparent lg:via-[#07110b]/15"></div>
 
-        <div class="mx-auto grid min-h-[860px] w-full max-w-site grid-cols-1 px-5 sm:px-8 lg:min-h-0 lg:h-full lg:grid-cols-2 lg:px-12">
-            <div class="flex flex-col items-start pt-12 pb-6 lg:justify-center lg:py-8">
+        <div class="mx-auto grid min-h-[900px] w-full max-w-site grid-cols-1 px-5 sm:px-8 lg:min-h-[clamp(35rem,40vw,42.5rem)] lg:grid-cols-[48%_52%] lg:px-12">
+            <div class="flex flex-col items-start pt-14 pb-8 lg:justify-center lg:py-14">
                 <p class="text-[0.72rem] font-semibold tracking-[0.38em] uppercase sm:text-sm">Premium Quality</p>
 
-                <h1 class="mt-3 font-display text-[clamp(4.15rem,10vw,5.15rem)] leading-[0.72] font-semibold tracking-[-0.045em] uppercase sm:text-[5.25rem] lg:mt-4 lg:text-[clamp(4rem,6.5vw,5.15rem)]">
+                <h1 class="mt-4 font-display text-[clamp(4.15rem,10vw,5.15rem)] leading-[0.72] font-semibold tracking-[-0.045em] uppercase sm:text-[5.25rem] lg:text-[clamp(4.75rem,6vw,6.25rem)]">
                     <span class="block">Oron</span>
                     <span class="block">Crayfish</span>
                 </h1>
 
-                <div class="mt-5 flex items-center gap-4 text-sm font-semibold tracking-[0.34em] uppercase sm:text-base">
+                <div class="mt-7 flex items-center gap-4 text-sm font-semibold tracking-[0.34em] uppercase sm:text-base">
                     <span class="h-0.5 w-11 bg-accent"></span>
                     <span>Ground Fresh</span>
                 </div>
 
-                <p class="mt-5 max-w-sm font-display text-[1.6rem] leading-[1.03] font-medium sm:text-[1.75rem]">
+                <p class="mt-7 max-w-md font-display text-[1.6rem] leading-[1.08] font-medium sm:text-[1.75rem] lg:text-[2rem]">
                     Authentic flavor. From our waters<br class="hidden sm:block"> to your table.
                 </p>
 
-                <div class="mt-5 grid w-full max-w-md grid-cols-3 gap-3 sm:gap-7">
+                <div class="mt-7 grid w-full max-w-lg grid-cols-3 gap-3 sm:gap-7">
                     <div class="flex flex-col items-center gap-2 text-center">
                         <span class="flex size-12 items-center justify-center rounded-full border-2 border-white">
                             <svg class="size-7" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -64,25 +64,25 @@
                     </div>
                 </div>
 
-                <x-button-link :href="route('products')" class="mt-5 min-w-48 gap-3 text-base">
+                <x-button-link :href="route('products')" class="mt-7 min-w-48 gap-3 text-base">
                     Shop Now <span class="text-xl" aria-hidden="true">→</span>
                 </x-button-link>
             </div>
 
-            <div class="relative flex min-h-[390px] items-end justify-center lg:min-h-0 lg:justify-end">
+            <div class="flex min-h-[420px] items-end justify-center lg:min-h-0 lg:justify-end lg:pt-8">
                 <img
                     src="{{ asset('images/home/krill-harvest-pouch.webp') }}"
                     alt="Krill Harvest premium Oron ground crayfish pouch"
                     width="900"
                     height="1350"
-                    class="absolute bottom-[-1.5rem] h-[450px] w-auto max-w-none drop-shadow-[0_18px_22px_rgba(0,0,0,0.35)] sm:h-[510px] lg:right-[8%] lg:bottom-0 lg:h-[540px]"
+                    class="h-auto max-h-[520px] w-auto max-w-full drop-shadow-[0_18px_22px_rgba(0,0,0,0.35)] sm:max-h-[570px] lg:max-h-[clamp(35rem,40vw,41rem)] lg:max-w-[94%]"
                 >
             </div>
         </div>
     </section>
 
     <section class="bg-surface" aria-label="Why choose Krill Harvest">
-        <div class="mx-auto grid w-full max-w-site grid-cols-1 px-5 py-6 sm:grid-cols-2 sm:px-8 lg:h-[115px] lg:grid-cols-4 lg:px-10 lg:py-5">
+        <div class="mx-auto grid w-full max-w-site grid-cols-1 px-5 py-6 sm:grid-cols-2 sm:px-8 lg:min-h-[7.5rem] lg:grid-cols-4 lg:px-10 lg:py-6">
             <div class="flex items-center gap-4 border-b border-line py-4 sm:border-r sm:pr-5 lg:border-b-0 lg:py-0">
                 <span class="flex size-14 shrink-0 items-center justify-center rounded-full border-2 border-forest">
                     <svg class="size-9" viewBox="0 0 48 48" fill="none" aria-hidden="true">
@@ -140,30 +140,30 @@
         </div>
     </section>
 
-    <section class="grid bg-[#fbf8f2] lg:h-[305px] lg:grid-cols-[52.8%_47.2%]">
+    <section class="grid bg-[#fbf8f2] lg:min-h-[24rem] lg:grid-cols-[52.8%_47.2%] lg:items-stretch xl:min-h-[27.5rem]">
         <img
             src="{{ asset('images/home/nigerian-crayfish-stew.webp') }}"
             alt="Rich Nigerian crayfish stew with vegetables"
             width="1440"
             height="960"
             loading="lazy"
-            class="h-[320px] size-full object-cover object-center sm:h-[430px] lg:h-full"
+            class="h-[340px] w-full object-cover object-center sm:h-[430px] lg:h-full lg:min-h-[24rem] xl:min-h-[27.5rem]"
         >
 
-        <div class="relative isolate flex items-center overflow-hidden px-6 py-12 sm:px-12 lg:px-9 lg:py-7 xl:px-12">
-            <img src="{{ asset('images/home/crayfish-line-art.svg') }}" alt="" class="absolute -right-12 top-4 -z-10 h-[250px] w-auto opacity-[0.1]" aria-hidden="true">
-            <div class="max-w-[390px]">
+        <div class="relative isolate flex items-center overflow-hidden px-6 py-14 sm:px-12 lg:px-[clamp(3rem,5vw,5.5rem)] lg:py-14">
+            <img src="{{ asset('images/home/crayfish-line-art.svg') }}" alt="" class="absolute -right-10 top-6 -z-10 h-[250px] w-auto opacity-[0.1]" aria-hidden="true">
+            <div class="max-w-[34rem]">
                 <p class="flex items-center gap-3 text-[0.67rem] font-semibold tracking-[0.3em] text-accent uppercase">
                     <span class="h-0.5 w-9 bg-accent"></span>
                     A Taste of Home
                 </p>
-                <h2 class="mt-4 font-display text-[clamp(2.7rem,5vw,3.25rem)] leading-[0.84] font-semibold tracking-[-0.035em] text-black lg:text-[2.55rem]">
+                <h2 class="mt-5 font-display text-[clamp(2.7rem,5vw,3.25rem)] leading-[0.9] font-semibold tracking-[-0.035em] text-black lg:text-[clamp(2.75rem,3.2vw,3.5rem)]">
                     Bring Authentic<br>Nigerian Flavor to Life
                 </h2>
-                <p class="mt-4 text-sm leading-[1.35] text-[#35443e]">
+                <p class="mt-5 text-sm leading-[1.55] text-[#35443e] lg:text-base">
                     Krill Harvest Oron Crayfish is carefully processed to retain its rich aroma and natural taste, making every meal special — from soups and stews to sauces and traditional dishes.
                 </p>
-                <x-button-link :href="route('recipes')" class="mt-4 min-w-48 gap-3">
+                <x-button-link :href="route('recipes')" class="mt-6 min-w-48 gap-3">
                     Explore Recipes <span class="text-lg" aria-hidden="true">→</span>
                 </x-button-link>
             </div>
@@ -171,41 +171,41 @@
     </section>
 
     <section class="bg-[#eaf1ed]">
-        <div class="mx-auto grid w-full max-w-site gap-9 px-5 py-12 sm:px-8 lg:h-[285px] lg:grid-cols-[34%_66%] lg:items-center lg:gap-5 lg:px-10 lg:py-6">
-            <div>
+        <div class="mx-auto grid w-full max-w-site gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[37%_63%] lg:items-center lg:gap-8 lg:px-10 lg:py-14 xl:gap-10 xl:py-16">
+            <div class="lg:pr-5">
                 <p class="flex items-center gap-3 text-[0.67rem] font-semibold tracking-[0.3em] text-accent uppercase">
                     <span class="h-0.5 w-9 bg-accent"></span>
                     Tradition Meets Quality
                 </p>
-                <h2 class="mt-3 font-display text-[clamp(2.7rem,6vw,3.35rem)] leading-[0.84] font-semibold tracking-[-0.035em] text-black lg:text-[2.75rem]">
+                <h2 class="mt-4 font-display text-[clamp(2.7rem,6vw,3.35rem)] leading-[0.9] font-semibold tracking-[-0.035em] text-black lg:text-[clamp(2.85rem,3.2vw,3.65rem)]">
                     From Our Waters<br>to Your Table
                 </h2>
-                <p class="mt-4 max-w-sm text-sm leading-[1.35] text-muted">
+                <p class="mt-5 max-w-md text-sm leading-[1.55] text-muted lg:text-base">
                     Sustainably sourced, sun dried, and ground fresh to deliver the authentic taste of Oron crayfish. Pure. Natural. Always.
                 </p>
-                <x-button-link :href="route('our-story')" class="mt-4 min-w-40 gap-3">
+                <x-button-link :href="route('our-story')" class="mt-6 min-w-40 gap-3">
                     Our Story <span class="text-lg" aria-hidden="true">→</span>
                 </x-button-link>
             </div>
 
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-3">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-4">
                 <figure>
-                    <img src="{{ asset('images/home/responsibly-sourced.webp') }}" alt="Nigerian fisherman handling a net from a wooden canoe" width="800" height="1000" loading="lazy" class="aspect-[1.02] w-full rounded-xl object-cover object-center">
-                    <figcaption class="pt-2 text-center text-sm font-medium text-black">Responsibly Sourced</figcaption>
+                    <img src="{{ asset('images/home/responsibly-sourced.webp') }}" alt="Nigerian fisherman handling a net from a wooden canoe" width="800" height="1000" loading="lazy" class="aspect-[0.95] w-full rounded-xl object-cover object-center">
+                    <figcaption class="pt-3 text-center text-sm font-medium text-black">Responsibly Sourced</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/home/sun-dried.webp') }}" alt="Crayfish drying naturally on outdoor trays" width="800" height="1000" loading="lazy" class="aspect-[1.02] w-full rounded-xl object-cover object-center">
-                    <figcaption class="pt-2 text-center text-sm font-medium text-black">Sun Dried</figcaption>
+                    <img src="{{ asset('images/home/sun-dried.webp') }}" alt="Crayfish drying naturally on outdoor trays" width="800" height="1000" loading="lazy" class="aspect-[0.95] w-full rounded-xl object-cover object-center">
+                    <figcaption class="pt-3 text-center text-sm font-medium text-black">Sun Dried</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/home/ground-fresh.webp') }}" alt="Freshly ground crayfish in a wooden bowl" width="800" height="1000" loading="lazy" class="aspect-[1.02] w-full rounded-xl object-cover object-center">
-                    <figcaption class="pt-2 text-center text-sm font-medium text-black">Ground Fresh</figcaption>
+                    <img src="{{ asset('images/home/ground-fresh.webp') }}" alt="Freshly ground crayfish in a wooden bowl" width="800" height="1000" loading="lazy" class="aspect-[0.95] w-full rounded-xl object-cover object-center">
+                    <figcaption class="pt-3 text-center text-sm font-medium text-black">Ground Fresh</figcaption>
                 </figure>
             </div>
         </div>
     </section>
 
-    <section id="sustainability" class="relative isolate flex min-h-[390px] items-start justify-center overflow-hidden px-5 pt-12 text-center sm:px-8 lg:h-[255px] lg:min-h-0 lg:pt-8">
+    <section id="sustainability" class="relative isolate flex min-h-[390px] items-center justify-center overflow-hidden px-5 py-14 text-center sm:px-8 lg:min-h-[22rem] lg:py-16">
         <img
             src="{{ asset('images/home/sustainable-river.webp') }}"
             alt="Nigerian river surrounded by lush forest at golden hour"
