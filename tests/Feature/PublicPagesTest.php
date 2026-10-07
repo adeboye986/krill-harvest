@@ -76,4 +76,24 @@ class PublicPagesTest extends TestCase
             ->assertSee('images/story/quality-ground-crayfish.webp')
             ->assertSee('images/story/mangrove-cta.webp');
     }
+
+    public function test_products_page_renders_the_complete_product_campaign(): void
+    {
+        $response = $this->get('/products');
+
+        $response
+            ->assertSeeTextInOrder([
+                'Premium',
+                'Oron Crayfish',
+                'Rich flavor in every dish',
+                'Add Authentic Flavor',
+                'Sustainably Sourced',
+                'Delicious Meals, Made Simple',
+            ])
+            ->assertSee('images/products/hero-kitchen.webp')
+            ->assertSee('images/home/krill-harvest-pouch.webp')
+            ->assertSee('images/products/pouch-back.webp')
+            ->assertSee('images/home/nigerian-crayfish-stew.webp')
+            ->assertSee('images/products/sourcing-river.webp');
+    }
 }
