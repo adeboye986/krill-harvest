@@ -34,26 +34,13 @@
     <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-12 sm:px-10 sm:py-14 lg:grid-cols-[48%_52%] lg:items-start lg:gap-10 lg:px-12 lg:py-14 xl:px-20 xl:py-16">
         <div>
             <div class="flex items-center">
-                <div class="relative h-[4.7rem] w-[8.9rem] shrink-0 sm:h-20 sm:w-[9.5rem]" role="img" aria-label="Krill Harvest">
-                    <img
-                        src="{{ asset('images/brand/krill-harvest-logo.svg') }}"
-                        alt=""
-                        aria-hidden="true"
-                        class="absolute inset-0 size-full brightness-0 invert"
-                    >
-                    <img
-                        src="{{ asset('images/brand/krill-harvest-logo.svg') }}"
-                        alt=""
-                        aria-hidden="true"
-                        class="absolute inset-0 size-full [clip-path:inset(0_0_55%_0)]"
-                    >
-                    <img
-                        src="{{ asset('images/brand/krill-harvest-logo.svg') }}"
-                        alt=""
-                        aria-hidden="true"
-                        class="absolute inset-0 size-full [clip-path:inset(67%_0_0_0)]"
-                    >
-                </div>
+                <img
+                    src="{{ asset('images/brand/krill-harvest-logo-light.png') }}"
+                    alt="Krill Harvest"
+                    width="1484"
+                    height="1060"
+                    class="h-24 w-[8.4rem] shrink-0 object-contain sm:h-28 sm:w-[9.8rem]"
+                >
 
                 <span class="mx-5 h-16 w-px shrink-0 bg-white/25 sm:mx-6" aria-hidden="true"></span>
 
