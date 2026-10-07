@@ -7,6 +7,6 @@
         alt="Krill Harvest"
         width="152"
         height="80"
-        class="h-[4.25rem] w-auto"
+        class="h-[4.5rem] w-auto xl:h-20"
     >
 </a>
