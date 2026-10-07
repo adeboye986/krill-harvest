@@ -12,7 +12,7 @@ class PublicPagesTest extends TestCase
      * @param  non-empty-string  $view
      */
     #[DataProvider('publicPages')]
-    public function test_public_page_renders_its_view_with_shared_navigation(string $uri, string $view): void
+    public function test_public_page_renders_its_view_with_shared_layout(string $uri, string $view): void
     {
         $response = $this->get($uri);
 
@@ -20,7 +20,9 @@ class PublicPagesTest extends TestCase
             ->assertOk()
             ->assertViewIs($view)
             ->assertSeeText('Krill Harvest')
-            ->assertSeeText('Shop Now');
+            ->assertSeeText('Shop Now')
+            ->assertSeeText('Premium Oron crayfish from the heart of Nigeria')
+            ->assertSeeText('All rights reserved.');
     }
 
     /**

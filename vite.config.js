@@ -15,6 +15,9 @@ export default defineConfig({
                 bunny('Cormorant Garamond', {
                     weights: [400, 500, 600, 700],
                 }),
+                bunny('Caveat', {
+                    weights: [500, 600],
+                }),
             ],
         }),
         tailwindcss(),
