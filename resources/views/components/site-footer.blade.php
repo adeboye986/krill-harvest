@@ -31,8 +31,8 @@
         >
     </div>
 
-    <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-12 sm:px-10 sm:py-14 lg:grid-cols-[48%_52%] lg:items-start lg:gap-10 lg:px-12 lg:py-14 xl:px-20 xl:py-16">
-        <div>
+    <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-12 sm:px-10 sm:py-14 lg:grid-cols-[48%_52%] lg:items-start lg:gap-10 lg:px-12 lg:py-14 xl:px-20 xl:py-16" data-stagger data-stagger-distance="14" data-stagger-interval="0.12">
+        <div data-stagger-item>
             <div class="flex items-center">
                 <img
                     src="{{ asset('images/brand/krill-harvest-logo-light.png') }}"
@@ -59,7 +59,7 @@
             </p>
         </div>
 
-        <div class="lg:pt-2">
+        <div class="lg:pt-2" data-stagger-item>
             <nav aria-label="Footer navigation">
                 <ul class="flex flex-wrap items-center gap-x-3 gap-y-3 text-[0.95rem] font-medium sm:gap-x-4 xl:text-base lg:justify-end">
                     @foreach ($footerNavigation as $item)
@@ -83,7 +83,7 @@
                             href="{{ $social['href'] }}"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="flex size-7 items-center justify-center text-white transition-colors hover:text-accent"
+                            class="footer-social-link flex size-7 items-center justify-center text-white hover:text-accent"
                             aria-label="Krill Harvest on {{ $social['label'] }}"
                         >
                             @switch($social['label'])

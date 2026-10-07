@@ -3,18 +3,18 @@
 @section('title', 'Contact')
 
 @section('content')
-    <section class="overflow-hidden bg-[#faf8f3]">
+    <section class="overflow-hidden bg-[#faf8f3]" data-hero>
         <div class="mx-auto grid w-full max-w-[100rem] lg:min-h-[42rem] lg:grid-cols-[38%_62%] xl:min-h-[48rem]">
             <div class="relative isolate min-h-[46rem] overflow-hidden px-6 pt-12 sm:min-h-[50rem] sm:px-10 lg:min-h-0 lg:px-8 lg:pt-10 xl:px-16 xl:pt-14">
                 <div class="relative z-10 max-w-[31rem]">
-                    <p class="text-[clamp(0.78rem,0.85vw,1rem)] font-semibold tracking-[0.3em] text-accent uppercase">
+                    <p class="text-[clamp(0.78rem,0.85vw,1rem)] font-semibold tracking-[0.3em] text-accent uppercase" data-hero-eyebrow>
                         Contact Us
                     </p>
                     <h1 class="mt-4 font-display text-[clamp(4.7rem,12vw,6.8rem)] leading-[0.72] font-semibold tracking-[-0.055em] text-[#071d17] lg:text-[4.7rem] xl:text-[clamp(5.2rem,5.8vw,6.7rem)]">
-                        Let’s<br>
-                        Connect
+                        <span class="block" data-heading-mask><span class="block" data-heading-line>Let’s</span></span>
+                        <span class="block" data-heading-mask><span class="block" data-heading-line>Connect</span></span>
                     </h1>
-                    <p class="mt-6 max-w-[27rem] text-[clamp(1rem,1.2vw,1.3rem)] leading-[1.48] text-[#263d36]">
+                    <p class="mt-6 max-w-[27rem] text-[clamp(1rem,1.2vw,1.3rem)] leading-[1.48] text-[#263d36]" data-hero-copy>
                         Have a question, feedback, or simply<br class="hidden xl:block">
                         want to learn more about Krill Harvest?<br class="hidden xl:block">
                         We’d love to hear from you.
@@ -29,11 +29,12 @@
                     height="1024"
                     fetchpriority="high"
                     class="absolute inset-x-0 bottom-0 -z-10 h-[24rem] w-full object-cover object-[42%_center] sm:h-[28rem] lg:h-[46%] lg:object-[44%_center] xl:h-[48%]"
+                    data-hero-media
                 >
             </div>
 
             <div class="flex items-center px-5 py-10 sm:px-8 lg:px-4 lg:py-10 xl:px-8 xl:py-14">
-                <div class="w-full rounded-2xl border border-[#e5e7e3] bg-white px-6 py-9 shadow-[0_18px_55px_rgba(18,55,44,0.10)] sm:px-10 lg:px-9 lg:py-6 xl:px-12 xl:py-11">
+                <div class="w-full rounded-2xl border border-[#e5e7e3] bg-white px-6 py-9 shadow-[0_18px_55px_rgba(18,55,44,0.10)] sm:px-10 lg:px-9 lg:py-6 xl:px-12 xl:py-11" data-hero-card>
                     <h2 class="font-display text-[clamp(3rem,6vw,4.6rem)] leading-[0.86] font-semibold tracking-[-0.045em] text-[#071d17] lg:text-[3rem] xl:text-[clamp(3.5rem,4vw,4.75rem)]">
                         Send Us a Message
                     </h2>
@@ -166,7 +167,7 @@
                             @enderror
                         </div>
 
-                        <button type="submit" class="inline-flex min-h-14 w-full items-center justify-center gap-5 rounded-full bg-accent px-8 text-base font-semibold text-white transition-colors hover:bg-forest focus-visible:outline-offset-4">
+                        <button type="submit" class="motion-button inline-flex min-h-14 w-full items-center justify-center gap-5 rounded-full bg-accent px-8 text-base font-semibold text-white hover:bg-forest focus-visible:outline-offset-4">
                             Send Message <span class="text-xl" aria-hidden="true">→</span>
                         </button>
 
@@ -180,8 +181,8 @@
     </section>
 
     <section class="border-y border-[#e7e9e5] bg-white" aria-label="Contact support options">
-        <div class="mx-auto grid w-full max-w-[94rem] px-6 py-7 sm:px-10 md:grid-cols-3 lg:px-12 lg:py-7 xl:py-8">
-            <article class="flex items-center gap-5 border-b border-[#e1e5e1] py-5 md:border-r md:border-b-0 md:px-5 md:py-0 lg:gap-4 lg:px-4 xl:gap-7 xl:px-8">
+        <div class="mx-auto grid w-full max-w-[94rem] px-6 py-7 sm:px-10 md:grid-cols-3 lg:px-12 lg:py-7 xl:py-8" data-stagger data-stagger-distance="16">
+            <article class="flex items-center gap-5 border-b border-[#e1e5e1] py-5 md:border-r md:border-b-0 md:px-5 md:py-0 lg:gap-4 lg:px-4 xl:gap-7 xl:px-8" data-stagger-item>
                 <span class="flex size-18 shrink-0 items-center justify-center rounded-full bg-mist text-forest lg:size-16 xl:size-20">
                     <svg class="size-10" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                         <path d="M40 22c0 8-7.2 14-16 14-2.4 0-4.6-.4-6.6-1.2L8 39l2.9-8C9.1 28.5 8 25.6 8 22c0-8 7.2-14 16-14s16 6 16 14Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
@@ -193,7 +194,7 @@
                 </div>
             </article>
 
-            <article class="flex items-center gap-5 border-b border-[#e1e5e1] py-5 md:border-r md:border-b-0 md:px-5 md:py-0 lg:gap-4 lg:px-4 xl:gap-7 xl:px-8">
+            <article class="flex items-center gap-5 border-b border-[#e1e5e1] py-5 md:border-r md:border-b-0 md:px-5 md:py-0 lg:gap-4 lg:px-4 xl:gap-7 xl:px-8" data-stagger-item>
                 <span class="flex size-18 shrink-0 items-center justify-center rounded-full bg-mist text-forest lg:size-16 xl:size-20">
                     <svg class="size-10" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                         <path d="m10 16 14-8 14 8v17L24 41l-14-8V16Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
@@ -206,7 +207,7 @@
                 </div>
             </article>
 
-            <article class="flex items-center gap-5 py-5 md:px-5 md:py-0 lg:gap-4 lg:px-4 xl:gap-7 xl:px-8">
+            <article class="flex items-center gap-5 py-5 md:px-5 md:py-0 lg:gap-4 lg:px-4 xl:gap-7 xl:px-8" data-stagger-item>
                 <span class="flex size-18 shrink-0 items-center justify-center rounded-full bg-mist text-forest lg:size-16 xl:size-20">
                     <svg class="size-10" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                         <path d="M14 7h16l7 7v27H14V7Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
@@ -248,35 +249,37 @@
 
     <section id="contact-faqs" class="bg-[#faf8f3]">
         <div class="mx-auto w-full max-w-[94rem] px-6 py-12 sm:px-10 lg:px-12 lg:py-8 xl:py-18">
-            <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between" data-stagger data-stagger-distance="14" data-stagger-interval="0.08">
                 <div>
-                    <p class="text-[clamp(0.72rem,0.78vw,0.92rem)] font-semibold tracking-[0.28em] text-accent uppercase">
+                    <p class="text-[clamp(0.72rem,0.78vw,0.92rem)] font-semibold tracking-[0.28em] text-accent uppercase" data-stagger-item>
                         Frequently Asked Questions
                     </p>
-                    <h2 class="mt-3 font-display text-[clamp(3.2rem,6.5vw,4.5rem)] leading-[0.84] font-semibold tracking-[-0.045em] text-[#071d17] lg:mt-2 lg:text-[3rem] xl:mt-3 xl:text-[clamp(3.2rem,6.5vw,4.5rem)]">
+                    <h2 class="mt-3 font-display text-[clamp(3.2rem,6.5vw,4.5rem)] leading-[0.84] font-semibold tracking-[-0.045em] text-[#071d17] lg:mt-2 lg:text-[3rem] xl:mt-3 xl:text-[clamp(3.2rem,6.5vw,4.5rem)]" data-stagger-item>
                         Find Quick Answers
                     </h2>
-                    <p class="mt-4 text-[clamp(0.95rem,1vw,1.12rem)] leading-relaxed text-[#45564f] lg:mt-2 lg:text-[0.85rem] xl:mt-4 xl:text-[clamp(0.95rem,1vw,1.12rem)]">
+                    <p class="mt-4 text-[clamp(0.95rem,1vw,1.12rem)] leading-relaxed text-[#45564f] lg:mt-2 lg:text-[0.85rem] xl:mt-4 xl:text-[clamp(0.95rem,1vw,1.12rem)]" data-stagger-item>
                         Here are some of the most common questions about Krill Harvest products and orders.
                     </p>
                 </div>
 
-                <a href="#contact-faqs" class="inline-flex items-center gap-3 self-start font-semibold text-accent transition-colors hover:text-forest lg:self-auto lg:pb-2">
+                <a href="#contact-faqs" class="inline-flex items-center gap-3 self-start font-semibold text-accent transition-colors hover:text-forest lg:self-auto lg:pb-2" data-stagger-item>
                     View All FAQs <span class="text-xl" aria-hidden="true">→</span>
                 </a>
             </div>
 
-            <div class="mt-7 space-y-2.5 lg:mt-5 lg:space-y-1 xl:mt-7 xl:space-y-2.5">
+            <div class="mt-7 space-y-2.5 lg:mt-5 lg:space-y-1 xl:mt-7 xl:space-y-2.5" data-stagger data-stagger-distance="10" data-stagger-interval="0.06">
                 @foreach ($faqs as $faq)
-                    <details name="contact-faq" class="group rounded-lg border border-[#e2e5e1] bg-white shadow-[0_4px_15px_rgba(18,55,44,0.035)]">
+                    <details name="contact-faq" class="group rounded-lg border border-[#e2e5e1] bg-white shadow-[0_4px_15px_rgba(18,55,44,0.035)]" data-accordion data-stagger-item>
                         <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-[clamp(0.96rem,1vw,1.12rem)] font-medium text-[#13241e] marker:hidden sm:px-6 lg:min-h-12 lg:py-2.5 lg:text-[0.9rem] xl:min-h-14 xl:py-4 xl:text-[clamp(0.96rem,1vw,1.12rem)]">
                             <span>{{ $faq['question'] }}</span>
                             <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                 <path d="m7 10 5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </summary>
-                        <div class="border-t border-[#edf0ec] px-5 py-4 text-[0.95rem] leading-relaxed text-[#4b5c55] sm:px-6">
-                            {{ $faq['answer'] }}
+                        <div class="overflow-hidden" data-accordion-panel>
+                            <div class="border-t border-[#edf0ec] px-5 py-4 text-[0.95rem] leading-relaxed text-[#4b5c55] sm:px-6">
+                                {{ $faq['answer'] }}
+                            </div>
                         </div>
                     </details>
                 @endforeach
@@ -284,19 +287,3 @@
         </div>
     </section>
 @endsection
-
-@push('scripts')
-    <script>
-        const contactMessage = document.querySelector('[data-contact-message]');
-        const contactMessageCount = document.querySelector('[data-message-count]');
-
-        if (contactMessage && contactMessageCount) {
-            const updateContactMessageCount = () => {
-                contactMessageCount.textContent = `${contactMessage.value.length}/500`;
-            };
-
-            contactMessage.addEventListener('input', updateContactMessageCount);
-            updateContactMessageCount();
-        }
-    </script>
-@endpush

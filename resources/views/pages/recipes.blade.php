@@ -3,7 +3,7 @@
 @section('title', 'Recipes')
 
 @section('content')
-    <section class="relative isolate overflow-hidden bg-[#11261d] text-white">
+    <section class="relative isolate overflow-hidden bg-[#11261d] text-white" data-hero>
         <img
             src="{{ asset('images/recipes/hero-kitchen.webp') }}"
             alt="Ground crayfish, tomatoes, onions, and greens in a dark kitchen"
@@ -11,32 +11,33 @@
             height="819"
             class="absolute inset-0 -z-20 size-full object-cover object-[58%_center]"
             fetchpriority="high"
+            data-parallax
         >
         <div class="absolute inset-0 -z-10 bg-linear-to-r from-[#06110c]/96 via-[#06110c]/59 to-transparent lg:via-[#06110c]/36"></div>
 
         <div class="mx-auto grid w-full max-w-[100rem] grid-cols-1 px-5 sm:px-8 lg:min-h-[30rem] lg:grid-cols-[48%_52%] lg:px-12 xl:min-h-[clamp(34rem,40vw,44rem)] xl:px-20">
             <div class="flex flex-col items-start pt-14 pb-10 lg:justify-center lg:py-10 xl:py-14">
-                <p class="text-[clamp(0.78rem,0.9vw,1.05rem)] font-semibold tracking-[0.32em] text-accent uppercase">Recipes</p>
+                <p class="text-[clamp(0.78rem,0.9vw,1.05rem)] font-semibold tracking-[0.32em] text-accent uppercase" data-hero-eyebrow>Recipes</p>
 
                 <h1 class="mt-3 font-display text-[clamp(4rem,11vw,6rem)] leading-[0.78] font-semibold tracking-[-0.045em] sm:text-[6.2rem] lg:text-[3.7rem] xl:text-[clamp(4.5rem,5.7vw,6.6rem)]">
-                    Real<br>
-                    Nigerian Flavor<br>
-                    Starts Here
+                    <span class="block" data-heading-mask><span class="block" data-heading-line>Real</span></span>
+                    <span class="block" data-heading-mask><span class="block" data-heading-line>Nigerian Flavor</span></span>
+                    <span class="block" data-heading-mask><span class="block" data-heading-line>Starts Here</span></span>
                 </h1>
 
-                <p class="mt-5 max-w-[39rem] font-display text-[clamp(1.3rem,1.8vw,1.65rem)] leading-[1.18] text-white/95 lg:text-[1.08rem] xl:text-[clamp(1.25rem,1.45vw,1.7rem)]">
+                <p class="mt-5 max-w-[39rem] font-display text-[clamp(1.3rem,1.8vw,1.65rem)] leading-[1.18] text-white/95 lg:text-[1.08rem] xl:text-[clamp(1.25rem,1.45vw,1.7rem)]" data-hero-copy>
                     Discover delicious, easy-to-follow recipes<br class="hidden xl:block">
                     made with Krill Harvest Oron Crayfish.<br class="hidden xl:block">
                     From traditional favorites to modern dishes,<br class="hidden xl:block">
                     bring the authentic taste of Nigeria to your table.
                 </p>
 
-                <x-button-link :href="route('recipes').'#featured-recipes'" class="mt-6 min-h-14 min-w-56 gap-4 px-9 text-[1.05rem]">
+                <x-button-link :href="route('recipes').'#featured-recipes'" class="mt-6 min-h-14 min-w-56 gap-4 px-9 text-[1.05rem]" data-hero-cta>
                     Explore Recipes <span class="text-xl" aria-hidden="true">→</span>
                 </x-button-link>
 
-                <div class="mt-6 grid w-full max-w-[37rem] grid-cols-3 gap-3 sm:gap-7">
-                    <div class="flex flex-col items-center gap-2 text-center">
+                <div class="mt-6 grid w-full max-w-[37rem] grid-cols-3 gap-3 sm:gap-7" data-hero-features>
+                    <div class="flex flex-col items-center gap-2 text-center" data-hero-feature>
                         <span class="flex size-[clamp(3.5rem,3.6vw,4.25rem)] items-center justify-center rounded-full border-2 border-white">
                             <svg class="size-[clamp(2rem,2.1vw,2.5rem)]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
                                 <path d="M10 18a7 7 0 0 1 6.8-7A8 8 0 0 1 31 16.1 6 6 0 0 1 30 28H10a5 5 0 0 1 0-10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
@@ -46,7 +47,7 @@
                         <span class="text-[clamp(0.78rem,0.85vw,0.98rem)] leading-[1.05]">Authentic<br>Nigerian Recipes</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-center">
+                    <div class="flex flex-col items-center gap-2 text-center" data-hero-feature>
                         <span class="flex size-[clamp(3.5rem,3.6vw,4.25rem)] items-center justify-center rounded-full border-2 border-white">
                             <svg class="size-[clamp(2rem,2.1vw,2.5rem)]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
                                 <path d="M12 7v10M8 7v6c0 3 1.3 4 4 4s4-1 4-4V7M12 17v16M28 7c-3 0-5 3.3-5 8v5h5v13M28 7v26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
@@ -55,7 +56,7 @@
                         <span class="text-[clamp(0.78rem,0.85vw,0.98rem)] leading-[1.05]">Easy to Follow</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 text-center">
+                    <div class="flex flex-col items-center gap-2 text-center" data-hero-feature>
                         <span class="flex size-[clamp(3.5rem,3.6vw,4.25rem)] items-center justify-center rounded-full border-2 border-white">
                             <svg class="size-[clamp(2rem,2.1vw,2.5rem)]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
                                 <path d="M20 33S7 25.8 7 15.5C7 10.8 10.2 8 14.1 8c2.7 0 4.8 1.4 5.9 3.5C21.1 9.4 23.2 8 25.9 8c3.9 0 7.1 2.8 7.1 7.5C33 25.8 20 33 20 33Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
@@ -73,6 +74,9 @@
                     width="900"
                     height="1350"
                     class="relative z-10 h-auto max-h-[500px] w-auto max-w-full drop-shadow-[0_20px_26px_rgba(0,0,0,0.35)] sm:max-h-[580px] lg:max-h-[clamp(32rem,38vw,40rem)]"
+                    data-hero-pouch
+                    data-float
+                    data-pointer-depth
                 >
 
             </div>
@@ -82,7 +86,7 @@
     <section class="bg-[#fbf8f1]">
         <div class="mx-auto w-full max-w-[100rem] px-5 py-12 sm:px-8 lg:px-12 lg:py-6 xl:px-16 xl:py-16">
             <div class="grid gap-9 lg:grid-cols-[35%_65%] lg:items-center lg:gap-10">
-                <div>
+                <div data-reveal="up" data-reveal-distance="18">
                     <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.28em] text-accent uppercase">
                         Browse Recipes
                     </p>
@@ -96,8 +100,8 @@
                 </div>
 
                 <div class="overflow-x-auto pb-2">
-                    <div class="grid min-w-[43rem] grid-cols-6 gap-4 text-center lg:min-w-0 lg:gap-3 xl:gap-5" role="group" aria-label="Recipe categories">
-                        <button type="button" class="group flex flex-col items-center gap-3 text-accent" aria-pressed="true">
+                    <div class="grid min-w-[43rem] grid-cols-6 gap-4 text-center lg:min-w-0 lg:gap-3 xl:gap-5" role="group" aria-label="Recipe categories" data-stagger data-stagger-distance="14" data-stagger-interval="0.07">
+                        <button type="button" class="group flex flex-col items-center gap-3 text-accent" aria-pressed="true" data-stagger-item>
                             <span class="flex size-[clamp(4rem,5vw,5rem)] items-center justify-center rounded-full bg-accent text-white">
                                 <svg class="size-[clamp(2.3rem,2.8vw,2.8rem)]" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                                     <path d="M9 20h30v17H9V20Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
@@ -107,7 +111,7 @@
                             <span class="text-[clamp(0.85rem,0.9vw,1rem)] font-medium whitespace-nowrap">All Recipes</span>
                         </button>
 
-                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false">
+                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false" data-stagger-item>
                             <span class="flex size-[clamp(4rem,5vw,5rem)] items-center justify-center rounded-full bg-mist">
                                 <svg class="size-[clamp(2.3rem,2.8vw,2.8rem)]" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                                     <path d="M8 23h32l-3 13H11L8 23Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
@@ -117,7 +121,7 @@
                             <span class="text-[clamp(0.85rem,0.9vw,1rem)] font-medium">Soups</span>
                         </button>
 
-                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false">
+                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false" data-stagger-item>
                             <span class="flex size-[clamp(4rem,5vw,5rem)] items-center justify-center rounded-full bg-mist">
                                 <svg class="size-[clamp(2.3rem,2.8vw,2.8rem)]" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                                     <path d="M9 25h30l-4 11H13L9 25Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
@@ -127,7 +131,7 @@
                             <span class="text-[clamp(0.85rem,0.9vw,1rem)] font-medium">Stews</span>
                         </button>
 
-                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false">
+                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false" data-stagger-item>
                             <span class="flex size-[clamp(4rem,5vw,5rem)] items-center justify-center rounded-full bg-mist">
                                 <svg class="size-[clamp(2.3rem,2.8vw,2.8rem)]" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                                     <path d="M8 28h32l-4 9H12l-4-9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
@@ -137,7 +141,7 @@
                             <span class="text-[clamp(0.85rem,0.9vw,1rem)] font-medium whitespace-nowrap">Rice Dishes</span>
                         </button>
 
-                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false">
+                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false" data-stagger-item>
                             <span class="flex size-[clamp(4rem,5vw,5rem)] items-center justify-center rounded-full bg-mist">
                                 <svg class="size-[clamp(2.3rem,2.8vw,2.8rem)]" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                                     <path d="M36 9C23 10.7 16 17.3 15 31c11.3.1 20.3-6.8 21-22Z" stroke="currentColor" stroke-width="2" />
@@ -147,7 +151,7 @@
                             <span class="text-[clamp(0.85rem,0.9vw,1rem)] font-medium">Sides</span>
                         </button>
 
-                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false">
+                        <button type="button" class="group flex flex-col items-center gap-3 text-forest" aria-pressed="false" data-stagger-item>
                             <span class="flex size-[clamp(4rem,5vw,5rem)] items-center justify-center rounded-full bg-mist">
                                 <svg class="size-[clamp(2.3rem,2.8vw,2.8rem)]" viewBox="0 0 48 48" fill="none" aria-hidden="true">
                                     <path d="M10 18a7 7 0 0 1 6.8-7A8 8 0 0 1 31 16.1 6 6 0 0 1 30 28H10a5 5 0 0 1 0-10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
@@ -161,7 +165,7 @@
             </div>
 
             <div id="featured-recipes" class="mt-12 scroll-mt-8 lg:mt-7 xl:mt-14">
-                <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.28em] text-accent uppercase">
+                <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.28em] text-accent uppercase" data-reveal="up" data-reveal-distance="16">
                     Featured Recipes
                 </p>
 
@@ -194,9 +198,9 @@
                     ];
                 @endphp
 
-                <div class="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-stagger data-stagger-interval="0.12">
                     @foreach ($featuredRecipes as $recipe)
-                        <article class="flex h-full flex-col overflow-hidden rounded-xl border border-[#e7e2d8] bg-[#fffdf8] shadow-[0_8px_24px_rgba(24,55,44,0.05)]">
+                        <article class="recipe-card flex h-full flex-col overflow-hidden rounded-xl border border-[#e7e2d8] bg-[#fffdf8] shadow-[0_8px_24px_rgba(24,55,44,0.05)]" data-stagger-item>
                             <img
                                 src="{{ asset($recipe['image']) }}"
                                 alt="{{ $recipe['alt'] }}"
@@ -204,6 +208,7 @@
                                 height="941"
                                 loading="lazy"
                                 class="aspect-[1.86] w-full object-cover object-center"
+                                data-stagger-image
                             >
                             <div class="flex flex-1 flex-col px-5 pt-4 pb-5 lg:px-4 lg:pt-3 lg:pb-4 xl:px-6 xl:pt-4 xl:pb-5">
                                 <h3 class="font-display text-[clamp(1.45rem,1.55vw,1.8rem)] leading-none font-semibold text-black lg:text-[1.2rem] xl:text-[clamp(1.45rem,1.55vw,1.8rem)]">{{ $recipe['title'] }}</h3>
@@ -228,7 +233,7 @@
                                 </div>
 
                                 <a href="{{ route('recipes') }}#featured-recipes" class="mt-4 inline-flex items-center gap-3 font-semibold text-accent transition-colors hover:text-forest lg:mt-3 xl:mt-4">
-                                    View Recipe <span class="text-xl" aria-hidden="true">→</span>
+                                    View Recipe <span class="recipe-card__arrow text-xl" aria-hidden="true">→</span>
                                 </a>
                             </div>
                         </article>
@@ -239,8 +244,8 @@
     </section>
 
     <section id="recipe-community" class="bg-[#fbf8f1] px-5 pb-8 sm:px-8 lg:px-12 xl:px-16">
-        <div class="mx-auto grid w-full max-w-[94rem] overflow-hidden rounded-xl bg-[#0b4535] text-white lg:min-h-[9.5rem] lg:grid-cols-[34%_43%_23%] lg:items-center xl:min-h-[11.5rem]">
-            <figure class="relative min-h-[250px] overflow-hidden sm:min-h-[300px] lg:min-h-full">
+        <div class="mx-auto grid w-full max-w-[94rem] overflow-hidden rounded-xl bg-[#0b4535] text-white lg:min-h-[9.5rem] lg:grid-cols-[34%_43%_23%] lg:items-center xl:min-h-[11.5rem]" data-stagger data-stagger-distance="16" data-stagger-interval="0.1">
+            <figure class="relative min-h-[250px] overflow-hidden sm:min-h-[300px] lg:min-h-full" data-stagger-item>
                 <img
                     src="{{ asset('images/recipes/recipe-book.webp') }}"
                     alt="An open recipe book displaying a Nigerian dish"
@@ -251,7 +256,7 @@
                 >
             </figure>
 
-            <div class="px-6 py-10 sm:px-10 lg:px-6 lg:py-3 xl:px-10 xl:py-7">
+            <div class="px-6 py-10 sm:px-10 lg:px-6 lg:py-3 xl:px-10 xl:py-7" data-stagger-item>
                 <p class="flex items-center gap-4 text-[clamp(0.7rem,0.75vw,0.9rem)] font-semibold tracking-[0.24em] text-accent uppercase">
                     Cook. Share. Inspire.
                 </p>
@@ -263,7 +268,7 @@
                 </p>
             </div>
 
-            <div class="flex items-center justify-start px-6 pb-10 sm:px-10 lg:justify-center lg:px-6 lg:pb-0">
+            <div class="flex items-center justify-start px-6 pb-10 sm:px-10 lg:justify-center lg:px-6 lg:pb-0" data-stagger-item>
                 <x-button-link :href="route('contact')" class="min-h-14 min-w-56 gap-4 px-8 text-[1.05rem]">
                     Share Your Recipe <span class="text-xl" aria-hidden="true">→</span>
                 </x-button-link>
@@ -272,7 +277,7 @@
     </section>
 
     <section class="grid bg-[#fbf8f1] lg:min-h-[20rem] lg:grid-cols-[57%_43%] lg:items-stretch xl:min-h-[30rem]">
-        <figure class="relative isolate min-h-[380px] overflow-hidden bg-forest text-white sm:min-h-[480px] lg:min-h-[20rem] xl:min-h-[30rem]">
+        <figure class="relative isolate min-h-[380px] overflow-hidden bg-forest text-white sm:min-h-[480px] lg:min-h-[20rem] xl:min-h-[30rem]" data-image-mask="left">
             <img
                 src="{{ asset('images/story/quality-ground-crayfish.webp') }}"
                 alt="Ground Oron crayfish piled in a rustic wooden bowl"
@@ -285,18 +290,18 @@
 
         <div class="relative isolate flex items-center overflow-hidden px-6 py-14 sm:px-12 lg:px-[clamp(2.5rem,4vw,5rem)] lg:py-5 xl:py-12">
             <img src="{{ asset('images/home/crayfish-line-art.svg') }}" alt="" class="absolute -right-14 top-8 -z-10 h-[clamp(15rem,23vw,24rem)] w-auto opacity-[0.09]" aria-hidden="true">
-            <div class="max-w-[39rem]">
-                <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.27em] text-accent uppercase">
+            <div class="max-w-[39rem]" data-stagger data-stagger-distance="18" data-stagger-delay="0.14">
+                <p class="flex items-center gap-4 text-[clamp(0.72rem,0.8vw,0.95rem)] font-semibold tracking-[0.27em] text-accent uppercase" data-stagger-item>
                     A Taste of Nigeria
                 </p>
-                <h2 class="mt-4 font-display text-[clamp(3rem,7vw,4.2rem)] leading-[0.87] font-semibold tracking-[-0.04em] text-black lg:text-[2.7rem] xl:text-[clamp(3rem,4vw,4.7rem)]">
+                <h2 class="mt-4 font-display text-[clamp(3rem,7vw,4.2rem)] leading-[0.87] font-semibold tracking-[-0.04em] text-black lg:text-[2.7rem] xl:text-[clamp(3rem,4vw,4.7rem)]" data-stagger-item>
                     From Our Waters<br>
                     to Your Table
                 </h2>
-                <p class="mt-5 text-[0.98rem] leading-[1.55] text-[#35443e] lg:mt-3 lg:text-[0.9rem] xl:mt-5 xl:text-[clamp(1rem,1.05vw,1.18rem)]">
+                <p class="mt-5 text-[0.98rem] leading-[1.55] text-[#35443e] lg:mt-3 lg:text-[0.9rem] xl:mt-5 xl:text-[clamp(1rem,1.05vw,1.18rem)]" data-stagger-item>
                     Krill Harvest Oron Crayfish adds rich flavor and depth to your favorite dishes, making every meal a little more special.
                 </p>
-                <x-button-link :href="route('products')" class="mt-6 min-h-14 min-w-48 gap-4 text-[1.05rem]">
+                <x-button-link :href="route('products')" class="mt-6 min-h-14 min-w-48 gap-4 text-[1.05rem]" data-stagger-item>
                     Shop Now <span class="text-xl" aria-hidden="true">→</span>
                 </x-button-link>
             </div>

@@ -1,6 +1,6 @@
 <a
     href="{{ route('home') }}"
-    {{ $attributes->merge(['class' => 'inline-flex items-center']) }}
+    {{ $attributes->merge(['class' => 'site-logo inline-flex items-center']) }}
 >
     <span class="relative block h-16 aspect-[1484/1060] xl:h-[4.5rem]">
         <img

@@ -41,4 +41,115 @@
         pointer-events: none;
         -webkit-mask: url('/images/brand/krill-harvest-logo-light.png') center / contain no-repeat;
     }
+
+    .motion-button {
+        transition:
+            transform 180ms ease,
+            background-color 220ms ease,
+            color 220ms ease;
+    }
+
+    .motion-button > [aria-hidden='true'] {
+        transition: transform 220ms ease;
+    }
+
+    .motion-button:hover {
+        transform: translateY(-1px);
+    }
+
+    .motion-button:hover > [aria-hidden='true'] {
+        transform: translateX(4px);
+    }
+
+    .motion-button:active {
+        transform: translateY(0);
+    }
+
+    .site-logo {
+        transition: transform 280ms ease;
+    }
+
+    .site-logo:hover {
+        transform: translateY(-1px) scale(1.012);
+    }
+
+    .footer-social-link {
+        transition:
+            color 200ms ease,
+            transform 200ms ease;
+    }
+
+    .footer-social-link:hover {
+        transform: translateY(-1px) scale(1.07);
+    }
+
+    .recipe-card,
+    .recipe-card img,
+    .recipe-card__arrow {
+        transition:
+            transform 280ms ease,
+            box-shadow 280ms ease,
+            border-color 280ms ease;
+    }
+
+    [data-image-mask] {
+        transform-origin: center;
+    }
+
+    [data-stagger-image] {
+        transform-origin: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .site-nav-link::after {
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        content: '';
+        background: var(--color-accent);
+        transform: scaleX(0);
+        transform-origin: right center;
+        transition: transform 240ms ease;
+    }
+
+    .site-nav-link:hover::after,
+    .site-nav-link[aria-current='page']::after {
+        transform: scaleX(1);
+        transform-origin: left center;
+    }
+
+}
+
+@media (min-width: 1024px) and (pointer: fine) {
+    .recipe-card:hover {
+        border-color: color-mix(in srgb, var(--color-accent) 28%, transparent);
+        box-shadow: 0 14px 34px rgb(24 55 44 / 10%);
+        transform: translateY(-4px);
+    }
+
+    .recipe-card:hover img {
+        transform: scale(1.03);
+    }
+
+    .recipe-card:hover .recipe-card__arrow {
+        transform: translateX(4px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
