@@ -10,11 +10,16 @@ class PublicPagesTest extends TestCase
     /**
      * @param  non-empty-string  $uri
      * @param  non-empty-string  $view
+     * @param  non-empty-string  $activeNavigationLabel
      */
     #[DataProvider('publicPages')]
-    public function test_public_page_renders_its_view_with_shared_layout(string $uri, string $view): void
-    {
+    public function test_public_page_renders_its_view_with_shared_layout(
+        string $uri,
+        string $view,
+        string $activeNavigationLabel,
+    ): void {
         $response = $this->get($uri);
+        $content = $response->getContent();
 
         $response
             ->assertOk()
@@ -22,20 +27,27 @@ class PublicPagesTest extends TestCase
             ->assertSeeText('Krill Harvest')
             ->assertSeeText('Shop Now')
             ->assertSeeText('Premium Oron crayfish from the heart of Nigeria')
-            ->assertSeeText('All rights reserved.');
+            ->assertSeeText('All rights reserved.')
+            ->assertDontSee('>Sustainability<', false);
+
+        $this->assertSame(2, substr_count($content, 'aria-current="page"'));
+        $this->assertMatchesRegularExpression(
+            '/aria-current="page"[^>]*>\s*'.preg_quote($activeNavigationLabel, '/').'\s*<\/a>/',
+            $content,
+        );
     }
 
     /**
-     * @return array<string, array{non-empty-string, non-empty-string}>
+     * @return array<string, array{non-empty-string, non-empty-string, non-empty-string}>
      */
     public static function publicPages(): array
     {
         return [
-            'home' => ['/', 'pages.home'],
-            'our story' => ['/our-story', 'pages.our-story'],
-            'products' => ['/products', 'pages.products'],
-            'recipes' => ['/recipes', 'pages.recipes'],
-            'contact' => ['/contact', 'pages.contact'],
+            'home' => ['/', 'pages.home', 'Home'],
+            'our story' => ['/our-story', 'pages.our-story', 'Our Story'],
+            'products' => ['/products', 'pages.products', 'Products'],
+            'recipes' => ['/recipes', 'pages.recipes', 'Recipes'],
+            'contact' => ['/contact', 'pages.contact', 'Contact'],
         ];
     }
 

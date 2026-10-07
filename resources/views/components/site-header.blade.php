@@ -6,7 +6,6 @@
         ['label' => 'Our Story', 'route' => 'our-story'],
         ['label' => 'Products', 'route' => 'products'],
         ['label' => 'Recipes', 'route' => 'recipes'],
-        ['label' => 'Sustainability', 'route' => null, 'href' => route('home').'#sustainability'],
         ['label' => 'Contact', 'route' => 'contact'],
     ];
 @endphp
