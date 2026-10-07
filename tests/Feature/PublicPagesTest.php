@@ -96,4 +96,29 @@ class PublicPagesTest extends TestCase
             ->assertSee('images/home/nigerian-crayfish-stew.webp')
             ->assertSee('images/products/sourcing-river.webp');
     }
+
+    public function test_recipes_page_renders_the_complete_recipe_campaign(): void
+    {
+        $response = $this->get('/recipes');
+
+        $response
+            ->assertSeeTextInOrder([
+                'Real',
+                'Nigerian Flavor',
+                'Browse Recipes',
+                'Featured Recipes',
+                'Egusi Soup with Crayfish',
+                'Nigerian Jollof Rice',
+                'Okra Soup with Crayfish',
+                'Join Our Recipe Community',
+                'From Our Waters',
+            ])
+            ->assertSee('images/recipes/hero-kitchen.webp')
+            ->assertSee('images/home/krill-harvest-pouch.webp')
+            ->assertSee('images/recipes/egusi-soup.webp')
+            ->assertSee('images/recipes/jollof-rice.webp')
+            ->assertSee('images/recipes/okra-soup.webp')
+            ->assertSee('images/recipes/recipe-book.webp')
+            ->assertSee('images/story/quality-ground-crayfish.webp');
+    }
 }
