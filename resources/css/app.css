@@ -34,3 +34,13 @@
         @apply outline-2 outline-offset-4 outline-accent;
     }
 }
+
+@layer components {
+    .site-logo__navy-wordmark {
+        background-color: #001b31;
+        clip-path: inset(49% 0 22% 0);
+        mask: url('/images/brand/krill-harvest-logo-light.png') center / contain no-repeat;
+        pointer-events: none;
+        -webkit-mask: url('/images/brand/krill-harvest-logo-light.png') center / contain no-repeat;
+    }
+}
