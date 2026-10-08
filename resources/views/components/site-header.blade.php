@@ -32,6 +32,7 @@
             </nav>
 
             <div class="flex items-center justify-self-end gap-2 xl:gap-6">
+                {{-- Search and cart are temporarily hidden until their functionality is implemented.
                 <button type="button" class="inline-flex size-10 items-center justify-center text-forest transition-colors hover:text-accent xl:size-12" aria-label="Search">
                     <svg class="size-5 xl:size-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7" />
@@ -49,6 +50,7 @@
                         {{ $cartQuantity }}
                     </span>
                 </a>
+                --}}
 
                 <x-button-link :href="route('products')" class="min-h-12 px-7 text-sm whitespace-nowrap xl:min-h-14 xl:px-9 xl:text-base">Shop Now</x-button-link>
             </div>

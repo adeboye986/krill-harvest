@@ -29,6 +29,7 @@
             @endforeach
 
             <div class="flex items-center gap-5 pt-6">
+                {{-- Search and cart are temporarily hidden until their functionality is implemented.
                 <button type="button" class="inline-flex size-12 items-center justify-center border border-line" aria-label="Search">
                     <svg class="size-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7" />
@@ -46,6 +47,7 @@
                         {{ $cartQuantity }}
                     </span>
                 </a>
+                --}}
 
                 <x-button-link :href="route('products')" class="grow">Shop Now</x-button-link>
             </div>
