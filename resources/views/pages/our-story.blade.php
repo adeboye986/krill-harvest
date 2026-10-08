@@ -29,7 +29,7 @@
                     Krill Harvest brings you premium Oron crayfish,<br class="hidden xl:block">
                     wild-caught from the pristine waters of the Niger Delta,<br class="hidden xl:block">
                     carefully processed to preserve its natural flavor and rich<br class="hidden xl:block">
-                    aroma — so you can enjoy the authentic taste of Nigeria,<br class="hidden xl:block">
+                    aroma so you can enjoy the authentic taste of Nigeria,<br class="hidden xl:block">
                     wherever you are.
                 </p>
 
