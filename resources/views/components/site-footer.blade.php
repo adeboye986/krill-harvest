@@ -31,7 +31,7 @@
         >
     </div>
 
-    <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-12 sm:px-10 sm:py-14 lg:grid-cols-[48%_52%] lg:items-start lg:gap-10 lg:px-12 lg:py-14 xl:px-20 xl:py-16" data-stagger data-stagger-distance="14" data-stagger-interval="0.12">
+    <div class="mx-auto grid w-full max-w-[100rem] gap-9 px-6 py-16 sm:px-10 sm:py-20 lg:min-h-[30rem] lg:grid-cols-[48%_52%] lg:content-center lg:items-start lg:gap-10 lg:px-12 lg:py-20 xl:min-h-[32rem] xl:px-20 xl:py-24" data-stagger data-stagger-distance="14" data-stagger-interval="0.12">
         <div data-stagger-item>
             <div class="flex items-center">
                 <img
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <p class="mt-6 text-[0.9rem] text-[#bdc9c3] sm:text-[0.95rem]">
+            <p class="mt-8 text-[0.9rem] text-[#bdc9c3] sm:mt-10 sm:text-[0.95rem]">
                 © {{ now()->year }} Krill Harvest LLC. All rights reserved.
             </p>
         </div>
@@ -76,7 +76,7 @@
                 </ul>
             </nav>
 
-            <ul class="mt-5 flex items-center gap-4 lg:justify-end" aria-label="Social media links">
+            <ul class="mt-7 flex items-center gap-4 lg:justify-end" aria-label="Social media links">
                 @foreach ($socialLinks as $social)
                     <li>
                         <a
